@@ -8,7 +8,7 @@ import Image from "next/image";
 const testimonials = [
   {
     name: "IZERE Joshua",
-    role: "CEO of BranlyCode",
+    role: "CEO of BrainlyCode",
     quote: "Mpuhwe is a passionate and dedicated programmer who consistently produces high-quality work. She is eager to learn, adapts quickly, and is a valuable addition to any software development team.",
     image: "/joshua.jpeg",
   },
