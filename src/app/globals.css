@@ -15,7 +15,7 @@ html {
 
 body {
   @apply bg-background antialiased;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   color: var(--text-primary);
 }
 
