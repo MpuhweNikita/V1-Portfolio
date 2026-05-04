@@ -15,8 +15,8 @@ export function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/MpuhweNikita", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/mpuhwe-nikita-82a80934b/", label: "LinkedIn" },
   ];
 
   return (
