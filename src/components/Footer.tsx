@@ -24,10 +24,10 @@ export function Footer() {
     <footer className="relative overflow-hidden bg-white pt-24 pb-12 border-t border-gray-100">
       {/* Background Decorative Element */}
       <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[500px] h-[500px] bg-blue-50/50 rounded-full blur-3xl pointer-events-none" />
-      
+
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-start">
-          
+
           {/* Brand & Mission */}
           <div className="lg:col-span-5 space-y-8">
             <Link href="/" className="inline-block">
@@ -59,7 +59,7 @@ export function Footer() {
             <ul className="space-y-4">
               {navLinks.map((link) => (
                 <li key={link.label}>
-                  <Link 
+                  <Link
                     href={link.href}
                     className="group flex items-center gap-2 text-lg font-bold text-gray-900 transition-all hover:text-blue-600"
                   >
