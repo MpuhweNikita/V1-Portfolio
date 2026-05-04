@@ -81,7 +81,7 @@ export function Contact() {
           <p className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-blue-600">
             Contact
           </p>
-          <h2 className="font-urbanist text-5xl font-black tracking-tight text-gray-900 sm:text-6xl uppercase">
+          <h2 className="font-josefin text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">
             LET&apos;S HAVE A CHAT
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 font-medium">

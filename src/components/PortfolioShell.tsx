@@ -65,7 +65,7 @@ export function PortfolioShell() {
       >
         <Navbar activeSection={activeSection} />
         <main className="pb-28 md:pb-24">
-          <Hero />
+          <Hero isLoading={isLoading} />
           <About />
           <Skills />
           <Projects />

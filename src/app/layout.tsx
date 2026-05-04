@@ -1,12 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Saira } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
 import "./globals.css";
 
-const saira = Saira({
+const josefin = Josefin_Sans({
   subsets: ["latin"],
-  variable: "--font-saira",
+  variable: "--font-josefin",
   display: "swap",
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const viewport: Viewport = {
@@ -34,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${saira.variable} min-h-screen font-saira bg-background selection:bg-[#2563EB]/20 selection:text-[#0A1F44]`}
+        className={`${josefin.variable} min-h-screen font-josefin bg-background selection:bg-[#2563EB]/20 selection:text-[#0A1F44]`}
       >
         {children}
       </body>

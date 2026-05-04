@@ -16,11 +16,16 @@ const container = {
 };
 
 const item = {
-  hidden: { opacity: 0, y: 35 },
+  hidden: { opacity: 0, y: 35, scale: 0.95 },
   show: {
     opacity: 1,
-    y: 0,
-    transition: { type: "spring", stiffness: 200, damping: 12 },
+    y: [35, -15, 0],
+    scale: [0.95, 1.05, 1],
+    transition: { 
+      opacity: { duration: 0.4 },
+      y: { duration: 0.8, times: [0, 0.6, 1], ease: "easeOut" },
+      scale: { duration: 0.8, times: [0, 0.6, 1], ease: "easeOut" }
+    },
   },
 };
 
@@ -63,7 +68,7 @@ function TypingLine() {
   );
 }
 
-export function Hero() {
+export function Hero({ isLoading = false }: { isLoading?: boolean }) {
   const [parallax, setParallax] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -112,7 +117,7 @@ export function Hero() {
         <motion.div
           variants={container}
           initial="hidden"
-          animate="show"
+          animate={isLoading ? "hidden" : "show"}
           className="relative z-20 max-w-xl"
         >
           <motion.p
@@ -167,8 +172,14 @@ export function Hero() {
 
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ type: "spring", stiffness: 150, damping: 15, delay: 0.2 }}
+          animate={isLoading ? { opacity: 0, scale: 0 } : { opacity: 1, scale: 1 }}
+          transition={{ 
+            type: "spring", 
+            stiffness: 80, 
+            damping: 20, 
+            delay: 0.4,
+            duration: 1.5 
+          }}
           className="relative z-10 mx-auto flex max-w-md justify-center lg:mx-0 lg:max-w-none lg:justify-end"
         >
           <div className="relative">

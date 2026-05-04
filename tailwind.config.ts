@@ -20,8 +20,10 @@ const config: Config = {
         surfaceGlass: "rgba(255, 255, 255, 0.6)",
       },
       fontFamily: {
-        sans: ["system-ui", "sans-serif"],
-        display: ["system-ui", "sans-serif"],
+        sans: ["var(--font-josefin)", "system-ui", "sans-serif"],
+        josefin: ["var(--font-josefin)", "sans-serif"],
+        display: ["var(--font-josefin)", "system-ui", "sans-serif"],
+        urbanist: ["var(--font-josefin)", "sans-serif"],
       },
       boxShadow: {
         card: "0 4px 20px -2px rgba(61, 90, 62, 0.05), 0 2px 8px -2px rgba(61, 90, 62, 0.03)",
