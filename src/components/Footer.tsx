@@ -17,7 +17,6 @@ export function Footer() {
   const socialLinks = [
     { icon: Github, href: "https://github.com", label: "GitHub" },
     { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, href: "https://x.com", label: "Twitter" },
   ];
 
   return (
