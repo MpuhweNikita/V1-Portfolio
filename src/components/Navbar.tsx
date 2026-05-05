@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, Code2, GraduationCap, Home, Mail, UserRound } from "lucide-react";
+import { Briefcase, Code2, GraduationCap, Home, Mail, UserRound, Sparkles, MessageSquare } from "lucide-react";
 import type { ComponentType } from "react";
 import { useState } from "react";
 import type { SectionId } from "@/hooks/useActiveSection";
@@ -15,7 +15,9 @@ const navLinks: {
     { id: "about", label: "What I Do", Icon: UserRound },
     { id: "skills", label: "Skills", Icon: Code2 },
     { id: "projects", label: "Projects", Icon: Briefcase },
+    { id: "hire-me", label: "Why Me", Icon: Sparkles },
     { id: "education", label: "Education", Icon: GraduationCap },
+    { id: "testimonials", label: "Testimonials", Icon: MessageSquare },
     { id: "contact", label: "Chat", Icon: Mail },
   ];
 

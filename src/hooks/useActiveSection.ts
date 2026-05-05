@@ -7,6 +7,7 @@ const sectionIds = [
   "about",
   "skills",
   "projects",
+  "hire-me",
   "experience",
   "education",
   "testimonials",
@@ -35,7 +36,7 @@ export function useActiveSection() {
         }
       },
       {
-        rootMargin: "-20% 0px -55% 0px",
+        rootMargin: "-10% 0px -35% 0px",
         threshold: [0, 0.15, 0.35, 0.5, 0.75, 1],
       }
     );
