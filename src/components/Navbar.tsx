@@ -51,7 +51,7 @@ export function Navbar({ activeSection }: NavbarProps) {
               whileHover={{ y: -2, scale: 1.03 }}
               whileTap={{ scale: 0.95 }}
               className={`relative flex h-14 w-full max-w-[5.5rem] items-center justify-center rounded-xl transition ${activeSection === id
-                  ? "text-blue-600"
+                  ? "text-hotel-accent"
                   : "text-gray-600 group-hover:text-gray-900"
                 }`}
             >
@@ -70,12 +70,12 @@ export function Navbar({ activeSection }: NavbarProps) {
               {activeSection === id && (
                 <motion.span
                   layoutId="bottom-active"
-                  className="absolute inset-1 -z-10 rounded-xl border border-blue-600/35 bg-blue-50/50 shadow-[0_0_12px_rgba(37,99,235,0.2)]"
+                  className="absolute inset-1 -z-10 rounded-xl border border-hotel-accent/35 bg-hotel-light/50 shadow-[0_0_12px_rgba(37,99,235,0.2)]"
                   transition={{ type: "spring", stiffness: 340, damping: 28 }}
                 />
               )}
               <span
-                className={`absolute -bottom-0.5 h-2.5 w-2.5 rotate-45 rounded-[2px] transition ${activeSection === id ? "bg-blue-600/90" : "bg-transparent"
+                className={`absolute -bottom-0.5 h-2.5 w-2.5 rotate-45 rounded-[2px] transition ${activeSection === id ? "bg-hotel-accent/90" : "bg-transparent"
                   }`}
               />
             </motion.span>
@@ -85,3 +85,4 @@ export function Navbar({ activeSection }: NavbarProps) {
     </motion.nav>
   );
 }
+

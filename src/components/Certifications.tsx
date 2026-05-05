@@ -77,7 +77,7 @@ export function Certifications() {
                             transition={{ delay: i * 0.1, duration: 0.4, ease: "easeOut" }}
                             className="group flex flex-col rounded-[1.5rem] bg-white border border-gray-200 p-8 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:border-gray-300/50"
                         >
-                            <div className="mb-6 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#2563EB]/10 text-[#2563EB] ring-1 ring-gray-300/5 transition duration-200 group-hover:scale-110">
+                            <div className="mb-6 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-hotel-accent/10 text-hotel-accent ring-1 ring-gray-300/5 transition duration-200 group-hover:scale-110">
                                 <Award className="h-6 w-6" />
                             </div>
                             <p className="font-sans text-xs font-bold uppercase tracking-widest text-gray-500">{cert.year}</p>
@@ -91,4 +91,5 @@ export function Certifications() {
         </section>
     );
 }
+
 

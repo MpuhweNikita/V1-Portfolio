@@ -74,7 +74,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
 
                 {/* Right Column: Project Details */}
                 <div className="flex flex-col p-8 sm:p-10 lg:w-1/2 lg:p-12">
-                  <p className="mb-2 text-sm font-bold uppercase tracking-widest text-[#2563EB]">
+                  <p className="mb-2 text-sm font-bold uppercase tracking-widest text-hotel-accent">
                     {project.category.replace("-", " ")}
                   </p>
                   <h3
@@ -104,9 +104,9 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                   </div>
 
                   <div className="mt-10 grid gap-6 sm:grid-cols-2">
-                    <div className="rounded-2xl border border-slate-100 bg-blue-50/50 p-5">
-                      <h4 className="font-display mb-2 text-sm font-bold text-blue-900 uppercase tracking-widest">Challenges</h4>
-                      <p className="font-sans text-sm leading-relaxed text-blue-800/80">{project.challenges}</p>
+                    <div className="rounded-2xl border border-slate-100 bg-hotel-light/50 p-5">
+                      <h4 className="font-display mb-2 text-sm font-bold text-hotel-dark uppercase tracking-widest">Challenges</h4>
+                      <p className="font-sans text-sm leading-relaxed text-hotel-dark/80">{project.challenges}</p>
                     </div>
                     <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5">
                       <h4 className="font-display mb-2 text-sm font-bold text-slate-900 uppercase tracking-widest">Outcomes</h4>
@@ -122,7 +122,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-[#2563EB] px-6 py-3.5 text-sm font-bold text-white shadow-sm transition-all duration-150 hover:bg-blue-600 hover:scale-[1.02] sm:flex-none"
+                          className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-hotel-accent px-6 py-3.5 text-sm font-bold text-white shadow-sm transition-all duration-150 hover:bg-hotel-accent hover:scale-[1.02] sm:flex-none"
                         >
                           <ExternalLink className="h-4 w-4" />
                           View Live Site
@@ -139,7 +139,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 shadow-sm transition-all duration-150 hover:border-[#2563EB]/30 hover:text-[#2563EB] hover:scale-[1.02] sm:flex-none"
+                        className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 shadow-sm transition-all duration-150 hover:border-hotel-accent/30 hover:text-hotel-accent hover:scale-[1.02] sm:flex-none"
                       >
                         <Github className="h-4 w-4" />
                         Source Code
@@ -157,3 +157,4 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
     </AnimatePresence>
   );
 }
+

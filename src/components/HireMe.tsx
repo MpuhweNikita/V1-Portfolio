@@ -52,7 +52,7 @@ export function HireMe() {
                             transition={{ delay: i * 0.1, duration: 0.4, ease: "easeOut" }}
                             className="group flex flex-col rounded-[1.5rem] border border-gray-200 bg-white p-8 text-center shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-gray-300/50 hover:shadow-md"
                         >
-                            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#2563EB]/10 text-[#2563EB] transition duration-200 group-hover:scale-110">
+                            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-hotel-accent/10 text-hotel-accent transition duration-200 group-hover:scale-110">
                                 <s.Icon className="h-8 w-8" />
                             </div>
                             <h3 className="mb-3 font-display text-lg font-bold text-[#0F172A]">
@@ -93,12 +93,12 @@ export function HireMe() {
                                 className="relative flex flex-col rounded-[1.5rem] bg-white pt-10 p-8 shadow-md transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
                             >
                                 {/* Top Right Bracket */}
-                                <div className="absolute -top-[2px] -right-[2px] h-12 w-12 rounded-tr-[1.2rem] border-r-[5px] border-t-[5px] border-[#2563EB]" />
+                                <div className="absolute -top-[2px] -right-[2px] h-12 w-12 rounded-tr-[1.2rem] border-r-[5px] border-t-[5px] border-hotel-accent" />
                                 {/* Bottom Left Bracket */}
-                                <div className="absolute -bottom-[2px] -left-[2px] h-16 w-16 rounded-bl-[1.2rem] border-b-[6px] border-l-[6px] border-[#2563EB]" />
+                                <div className="absolute -bottom-[2px] -left-[2px] h-16 w-16 rounded-bl-[1.2rem] border-b-[6px] border-l-[6px] border-hotel-accent" />
 
-                                <div className="mb-6 flex h-[3.25rem] w-[3.25rem] items-center justify-center rounded-[0.85rem] bg-[#2563EB]/10 shadow-md">
-                                    <item.Icon className="h-6 w-6 text-[#2563EB]" />
+                                <div className="mb-6 flex h-[3.25rem] w-[3.25rem] items-center justify-center rounded-[0.85rem] bg-hotel-accent/10 shadow-md">
+                                    <item.Icon className="h-6 w-6 text-hotel-accent" />
                                 </div>
                                 <h4 className="mb-3 font-display text-[1.15rem] font-bold text-[#0F172A] tracking-tight">{item.title}</h4>
                                 <p className="text-[13px] leading-relaxed font-sans font-medium text-gray-600 flex-1">{item.desc}</p>
@@ -110,7 +110,7 @@ export function HireMe() {
                         <button
                             type="button"
                             onClick={scrollToContact}
-                            className="group inline-flex items-center gap-2.5 rounded-full bg-[#2563EB] px-12 py-5 font-bold text-white shadow-md transition-all duration-200 hover:bg-blue-600 hover:scale-[1.03] active:scale-[0.98]"
+                            className="group inline-flex items-center gap-2.5 rounded-full bg-hotel-accent px-12 py-5 font-bold text-white shadow-md transition-all duration-200 hover:bg-hotel-accent hover:scale-[1.03] active:scale-[0.98]"
                         >
                             <span>Let&apos;s Talk</span>
                             <ArrowRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
@@ -121,4 +121,5 @@ export function HireMe() {
         </section>
     );
 }
+
 

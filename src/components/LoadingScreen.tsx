@@ -16,8 +16,8 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
             transition={{ duration: 0.6, ease: "easeInOut" }}
             className="fixed inset-0 z-50 flex items-center justify-center bg-[#f8fafc]"
         >
-            <div className="pointer-events-none absolute -left-20 -top-20 h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-[120px]" />
-            <div className="pointer-events-none absolute -right-20 -bottom-20 h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-[120px]" />
+            <div className="pointer-events-none absolute -left-20 -top-20 h-[500px] w-[500px] rounded-full bg-hotel-accent/10 blur-[120px]" />
+            <div className="pointer-events-none absolute -right-20 -bottom-20 h-[500px] w-[500px] rounded-full bg-hotel-accent/10 blur-[120px]" />
 
             <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -30,3 +30,4 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
         </motion.div>
     );
 }
+

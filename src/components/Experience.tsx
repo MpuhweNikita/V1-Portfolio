@@ -72,8 +72,8 @@ export function Experience() {
                 className="relative flex gap-6 md:gap-10"
               >
                 <div className="relative z-10 flex h-10 w-6 shrink-0 justify-center md:h-12 md:w-12">
-                  <span className="mt-0 flex h-6 w-6 items-center justify-center rounded-full border border-[#2563EB]/20 bg-[#2563EB]/10 shadow-sm md:h-12 md:w-12">
-                    <Briefcase className="h-3 w-3 text-[#2563EB] md:h-5 md:w-5" />
+                  <span className="mt-0 flex h-6 w-6 items-center justify-center rounded-full border border-hotel-accent/20 bg-hotel-accent/10 shadow-sm md:h-12 md:w-12">
+                    <Briefcase className="h-3 w-3 text-hotel-accent md:h-5 md:w-5" />
                   </span>
                 </div>
                 <div
@@ -88,7 +88,7 @@ export function Experience() {
                   <ul className="font-sans mt-6 space-y-3 text-base text-gray-600">
                     {job.highlights.map((h) => (
                       <li key={h} className="flex gap-3 leading-relaxed">
-                        <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#2563EB]" />
+                        <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-hotel-accent" />
                         <span>{h}</span>
                       </li>
                     ))}
@@ -102,3 +102,4 @@ export function Experience() {
     </section>
   );
 }
+

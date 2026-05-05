@@ -23,9 +23,9 @@ function LoadingScreen() {
       transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
       className="fixed inset-0 z-[200] overflow-hidden bg-white"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-white to-blue-50/20" />
-      <div className="absolute -left-32 top-1/4 h-96 w-96 rounded-full bg-blue-500/10 blur-[100px]" />
-      <div className="absolute -right-20 bottom-1/4 h-80 w-80 rounded-full bg-blue-500/10 blur-[90px]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-hotel-light/30 via-white to-hotel-light/20" />
+      <div className="absolute -left-32 top-1/4 h-96 w-96 rounded-full bg-hotel-accent/10 blur-[100px]" />
+      <div className="absolute -right-20 bottom-1/4 h-80 w-80 rounded-full bg-hotel-accent/10 blur-[90px]" />
       <div className="relative z-10 flex h-full items-center justify-center px-4">
         <motion.p
           initial={{ opacity: 0, scale: 0.9 }}
@@ -80,3 +80,4 @@ export function PortfolioShell() {
     </>
   );
 }
+

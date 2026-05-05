@@ -60,12 +60,12 @@ export function Contact() {
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none tech-grid" />
         <motion.div
-          className="absolute left-[5%] top-20 h-24 w-24 rounded-full border border-blue-500/20 bg-blue-50/50"
+          className="absolute left-[5%] top-20 h-24 w-24 rounded-full border border-hotel-accent/20 bg-hotel-light/50"
           animate={{ y: [0, -20, 0], scale: [1, 1.1, 1] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute right-[5%] bottom-20 h-32 w-32 rounded-full border border-blue-500/10 bg-blue-50/30"
+          className="absolute right-[5%] bottom-20 h-32 w-32 rounded-full border border-hotel-accent/10 bg-hotel-light/30"
           animate={{ y: [0, 20, 0], scale: [1, 1.05, 1] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
@@ -78,7 +78,7 @@ export function Contact() {
           viewport={{ once: true, margin: "-80px" }}
           className="mb-20 text-center"
         >
-          <p className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-blue-600">
+          <p className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-hotel-accent">
             Contact
           </p>
           <h2 className="font-josefin text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">
@@ -99,16 +99,16 @@ export function Contact() {
           >
             <motion.div 
               whileHover={{ x: 8 }}
-              className="group flex items-start gap-5 rounded-3xl border border-gray-100 bg-gray-50/50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-blue-500/10"
+              className="group flex items-start gap-5 rounded-3xl border border-gray-100 bg-gray-50/50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-hotel-accent/10"
             >
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-lg shadow-blue-500/30">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-hotel-accent text-white shadow-lg shadow-hotel-accent/30">
                 <Mail className="h-6 w-6" />
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Email Me</p>
                 <a
                   href="mailto:mpuhwenikita@gmail.com"
-                  className="mt-1 block text-xl font-bold text-gray-900 transition-colors group-hover:text-blue-600"
+                  className="mt-1 block text-xl font-bold text-gray-900 transition-colors group-hover:text-hotel-accent"
                 >
                   mpuhwenikita@gmail.com
                 </a>
@@ -117,16 +117,16 @@ export function Contact() {
 
             <motion.div 
               whileHover={{ x: 8 }}
-              className="group flex items-start gap-5 rounded-3xl border border-gray-100 bg-gray-50/50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-blue-500/10"
+              className="group flex items-start gap-5 rounded-3xl border border-gray-100 bg-gray-50/50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-hotel-accent/10"
             >
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-lg shadow-blue-500/30">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-hotel-accent text-white shadow-lg shadow-hotel-accent/30">
                 <Phone className="h-6 w-6" />
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Phone</p>
                 <a
                   href="tel:0792535020"
-                  className="mt-1 block text-xl font-bold text-gray-900 transition-colors group-hover:text-blue-600"
+                  className="mt-1 block text-xl font-bold text-gray-900 transition-colors group-hover:text-hotel-accent"
                 >
                   0792535020
                 </a>
@@ -135,9 +135,9 @@ export function Contact() {
 
             <motion.div 
               whileHover={{ x: 8 }}
-              className="group flex items-start gap-5 rounded-3xl border border-gray-100 bg-gray-50/50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-blue-500/10"
+              className="group flex items-start gap-5 rounded-3xl border border-gray-100 bg-gray-50/50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-hotel-accent/10"
             >
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-lg shadow-blue-500/30">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-hotel-accent text-white shadow-lg shadow-hotel-accent/30">
                 <Clock className="h-6 w-6" />
               </div>
               <div>
@@ -148,9 +148,9 @@ export function Contact() {
 
             <motion.div 
               whileHover={{ x: 8 }}
-              className="group flex items-start gap-5 rounded-3xl border border-gray-100 bg-gray-50/50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-blue-500/10"
+              className="group flex items-start gap-5 rounded-3xl border border-gray-100 bg-gray-50/50 p-8 transition-all hover:bg-white hover:shadow-xl hover:shadow-hotel-accent/10"
             >
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-lg shadow-blue-500/30">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-hotel-accent text-white shadow-lg shadow-hotel-accent/30">
                 <MapPin className="h-6 w-6" />
               </div>
               <div>
@@ -168,7 +168,7 @@ export function Contact() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-12 w-12 items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-600 transition-all hover:scale-110 hover:border-blue-600 hover:text-blue-600 hover:shadow-lg"
+                    className="flex h-12 w-12 items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-600 transition-all hover:scale-110 hover:border-hotel-accent hover:text-hotel-accent hover:shadow-lg"
                     aria-label={label}
                   >
                     <Icon className="h-5 w-5" />
@@ -184,7 +184,7 @@ export function Contact() {
             viewport={{ once: true }}
             className="relative lg:col-span-3"
           >
-            <div className="absolute -inset-4 rounded-[2.5rem] bg-blue-50/50 blur-2xl" />
+            <div className="absolute -inset-4 rounded-[2.5rem] bg-hotel-light/50 blur-2xl" />
             <form
               onSubmit={handleSubmit(onSubmit)}
               className="relative rounded-[2rem] border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-200/50 sm:p-10"
@@ -197,7 +197,7 @@ export function Contact() {
                   <input
                     id="name"
                     {...register("name", { required: "Name is required" })}
-                    className="w-full rounded-2xl border border-gray-100 bg-gray-50 px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-4 focus:ring-blue-500/5 transition-all"
+                    className="w-full rounded-2xl border border-gray-100 bg-gray-50 px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:border-hotel-accent focus:bg-white focus:outline-none focus:ring-4 focus:ring-hotel-accent/5 transition-all"
                     placeholder="Enter your name"
                   />
                   {errors.name && (
@@ -218,7 +218,7 @@ export function Contact() {
                         message: "Enter a valid email",
                       },
                     })}
-                    className="w-full rounded-2xl border border-gray-100 bg-gray-50 px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-4 focus:ring-blue-500/5 transition-all"
+                    className="w-full rounded-2xl border border-gray-100 bg-gray-50 px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:border-hotel-accent focus:bg-white focus:outline-none focus:ring-4 focus:ring-hotel-accent/5 transition-all"
                     placeholder="you@example.com"
                   />
                   {errors.email && (
@@ -233,7 +233,7 @@ export function Contact() {
                     id="message"
                     rows={5}
                     {...register("message", { required: "Message is required" })}
-                    className="w-full resize-none rounded-2xl border border-gray-100 bg-gray-50 px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-4 focus:ring-blue-500/5 transition-all"
+                    className="w-full resize-none rounded-2xl border border-gray-100 bg-gray-50 px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:border-hotel-accent focus:bg-white focus:outline-none focus:ring-4 focus:ring-hotel-accent/5 transition-all"
                     placeholder="Tell me about your project or idea..."
                   />
                   {errors.message && (
@@ -248,8 +248,8 @@ export function Contact() {
                 whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
                 className={`mt-8 flex w-full items-center justify-center gap-3 rounded-2xl py-5 text-sm font-bold text-white shadow-xl transition-all ${
                   isSubmitting 
-                    ? 'bg-blue-400 cursor-not-allowed' 
-                    : 'bg-blue-600 hover:bg-blue-700 shadow-blue-500/20 hover:shadow-blue-500/40'
+                    ? 'bg-hotel-accent cursor-not-allowed' 
+                    : 'bg-hotel-accent hover:bg-hotel-accent shadow-hotel-accent/20 hover:shadow-hotel-accent/40'
                 }`}
               >
                 {isSubmitting ? (
@@ -285,3 +285,4 @@ export function Contact() {
     </section>
   );
 }
+

@@ -64,7 +64,7 @@ export function Education() {
                 transition={{ duration: 0.4, ease: "easeOut", delay: i * 0.1 }}
                 className="group flex gap-5 rounded-[1.5rem] bg-white border border-gray-200 p-8 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:border-gray-300/50"
               >
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#2563EB]/10 text-[#2563EB] ring-1 ring-gray-300/5">
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-hotel-accent/10 text-hotel-accent ring-1 ring-gray-300/5">
                   <Icon className="h-7 w-7" />
                 </div>
                 <div>
@@ -81,3 +81,4 @@ export function Education() {
     </section>
   );
 }
+

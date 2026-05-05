@@ -55,10 +55,10 @@ export function Testimonials() {
           transition={{ duration: 0.4, ease: "easeOut" }}
           className="mb-16 text-center"
         >
-          <div className="mb-6 inline-flex rounded-full border border-gray-300 bg-white px-5 py-2">
-            <p className="font-urbanist text-sm font-semibold uppercase tracking-widest text-gray-700">Testimonials</p>
+          <div className="mb-6 inline-flex rounded-full border border-hotel-accent/30 bg-hotel-accent/10 px-5 py-2">
+            <p className="font-urbanist text-sm font-semibold uppercase tracking-widest text-hotel-dark">Testimonials</p>
           </div>
-          <h2 className="font-urbanist text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <h2 className="font-urbanist text-4xl font-bold tracking-tight text-hotel-dark sm:text-5xl">
             Words of Appreciation
           </h2>
         </motion.div>
@@ -66,19 +66,19 @@ export function Testimonials() {
         <div
           className={`relative mx-auto h-[52rem] max-w-6xl overflow-hidden rounded-[3rem] bg-white ${paused ? "orbit-paused" : ""}`}
         >
-          {/* Subtle blue center gradient */}
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.03),transparent_70%)]" />
+          {/* Subtle hotel-accent center gradient */}
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(39,182,200,0.03),transparent_70%)]" />
 
           {/* High-Precision Concentric Diamonds Background */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
             {/* Center Fill */}
-            <div className="absolute w-40 h-40 bg-blue-500/20 rotate-45 border-dashed border border-blue-500/50 rounded-3xl" />
+            <div className="absolute w-40 h-40 bg-hotel-accent/20 rotate-45 border-dashed border border-hotel-accent/50 rounded-3xl" />
 
             {/* Thin Diamond Layers */}
-            <div className="absolute w-64 h-64 border-[0.5px] border-blue-200/30 rotate-45 rounded-[2rem] bg-blue-600/20" />
-            <div className="absolute w-80 h-80 border-[0.5px] border border-blue-200/20 rotate-45 rounded-[2.5rem]" />
-            <div className="absolute w-[35rem] h-[35rem] border-[0.5px] border-blue-100/20 border-dashed rounded-[3rem]" />
-            <div className="absolute w-[36rem] h-[36rem] border-[0.5px] border-dashed border-blue-100/10 rounded-[4rem]" />
+            <div className="absolute w-64 h-64 border-[0.5px] border-hotel-light/30 rotate-45 rounded-[2rem] bg-hotel-accent/20" />
+            <div className="absolute w-80 h-80 border-[0.5px] border border-hotel-light/20 rotate-45 rounded-[2.5rem]" />
+            <div className="absolute w-[35rem] h-[35rem] border-[0.5px] border-hotel-light/20 border-dashed rounded-[3rem]" />
+            <div className="absolute w-[36rem] h-[36rem] border-[0.5px] border-dashed border-hotel-light/10 rounded-[4rem]" />
           </div>
 
           {orbiting.map((item, i) => {
@@ -94,13 +94,13 @@ export function Testimonials() {
                 }
               >
                 <motion.article
-                  className="w-[20rem] bg-[#0A162B] rounded-[1.5rem] rounded-br-[6rem] overflow-hidden shadow-2xl border border-white/5 group relative"
+                  className="w-[20rem] bg-hotel-dark rounded-[1.5rem] rounded-br-[6rem] overflow-hidden shadow-2xl border border-white/5 group relative"
                   onMouseEnter={() => setPaused(true)}
                   onMouseLeave={() => setPaused(false)}
                   whileHover={{ scale: 1.02, zIndex: 50 }}
                   style={{ transformOrigin: "center" }}
                 >
-                  {/* The specific "Sandrine" cutout shape */}
+                  {/* The specific cutout shape */}
                   <div className="absolute top-0 left-0 w-32 h-32 bg-white rounded-br-[3.5rem] z-10 overflow-hidden shadow-sm">
                     <Image
                       src={item.image}
@@ -113,8 +113,8 @@ export function Testimonials() {
 
                   <div className="pt-7 pl-36 pr-6 min-h-[8rem] flex flex-col justify-center">
                     <h3 className="font-urbanist font-bold text-white text-[1rem] leading-tight">{item.name}</h3>
-                    <p className="font-urbanist text-[0.7rem] text-slate-400 font-bold uppercase tracking-wider mt-1">{item.role}</p>
-                    <div className="mt-2 flex text-blue-400 text-[8px] gap-0.5">
+                    <p className="font-urbanist text-[0.7rem] text-hotel-light/70 font-bold uppercase tracking-wider mt-1">{item.role}</p>
+                    <div className="mt-2 flex text-hotel-accent text-[8px] gap-0.5">
                       {[...Array(5)].map((_, i) => (
                         <span key={i}>★</span>
                       ))}
@@ -122,7 +122,7 @@ export function Testimonials() {
                   </div>
 
                   <div className="px-8 pt-2 pb-14">
-                    <p className="font-urbanist text-[13px] font-medium leading-relaxed text-slate-300 italic opacity-90">
+                    <p className="font-urbanist text-[13px] font-medium leading-relaxed text-hotel-light/90 italic opacity-90">
                       &ldquo;{item.quote}&rdquo;
                     </p>
                   </div>
@@ -136,3 +136,4 @@ export function Testimonials() {
     </section>
   );
 }
+
