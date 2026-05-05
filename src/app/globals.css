@@ -23,6 +23,53 @@ section {
   will-change: transform, opacity;
 }
 
+/* Wavy Dividers */
+.wavy-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wavy-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 90px;
+}
+
+.wavy-divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wavy-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 90px;
+}
+
+.shape-fill-light {
+  fill: #EAF7F8;
+}
+
+.shape-fill-white {
+  fill: #ffffff;
+}
+
+.shape-fill-dark {
+  fill: #2A5A68;
+}
+
+
 /* Tech grid overlay */
 .tech-grid {
   background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px,

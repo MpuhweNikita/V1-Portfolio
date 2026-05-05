@@ -85,7 +85,7 @@ export default function ProjectsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.05, duration: 0.4 }}
             >
-              <article className="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(37,99,235,0.15)] hover:border-blue-100">
+              <article className="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(37,99,235,0.15)] hover:border-hotel-light">
                 <button
                   type="button"
                   onClick={() => setSelected(project)}
@@ -110,11 +110,11 @@ export default function ProjectsPage() {
 
                 <div className="flex flex-1 flex-col p-8">
                   <div className="mb-4">
-                    <span className="inline-block rounded-full bg-blue-50 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-[#2563EB]">
+                    <span className="inline-block rounded-full bg-hotel-light px-3 py-1 text-[10px] font-black uppercase tracking-widest text-hotel-accent">
                       {project.category}
                     </span>
                   </div>
-                  <h3 className="font-display text-2xl font-bold text-[#0F172A] group-hover:text-[#2563EB] transition-colors">
+                  <h3 className="font-display text-2xl font-bold text-[#0F172A] group-hover:text-hotel-accent transition-colors">
                     {project.title}
                   </h3>
                   <p className="mt-2 text-xs font-bold uppercase tracking-wider text-gray-400">{project.role}</p>
@@ -155,7 +155,7 @@ export default function ProjectsPage() {
                     <button
                       type="button"
                       onClick={() => setSelected(project)}
-                      className="flex-1 inline-flex items-center justify-center rounded-xl bg-[#2563EB] py-3 text-xs font-bold text-white transition-all hover:bg-blue-700 hover:shadow-lg active:scale-95"
+                      className="flex-1 inline-flex items-center justify-center rounded-xl bg-hotel-accent py-3 text-xs font-bold text-white transition-all hover:bg-hotel-accent hover:shadow-lg active:scale-95"
                     >
                       Details
                     </button>
@@ -172,3 +172,4 @@ export default function ProjectsPage() {
     </div>
   );
 }
+

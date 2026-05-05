@@ -16,7 +16,7 @@ export default function ResumePage() {
                 <header className="mb-8 border-b-2 border-neutral-300 pb-4 flex justify-between items-end print:hidden">
                     <h1 className="text-3xl font-bold">Resume</h1>
                     <div className="flex gap-4">
-                        <Link href="/" className="text-blue-600 hover:underline">Back to Portfolio</Link>
+                        <Link href="/" className="text-hotel-accent hover:underline">Back to Portfolio</Link>
                         {isClient && (
                             <button onClick={() => window.print()} className="bg-black text-white px-4 py-2 rounded hover:bg-neutral-800 transition">Download PDF</button>
                         )}
@@ -171,3 +171,4 @@ export default function ResumePage() {
         </main>
     );
 }
+

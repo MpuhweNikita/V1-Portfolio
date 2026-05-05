@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${josefin.variable} min-h-screen font-josefin bg-background selection:bg-[#2563EB]/20 selection:text-[#0A1F44]`}
+        className={`${josefin.variable} min-h-screen font-josefin bg-background selection:bg-hotel-accent/20 selection:text-hotel-dark`}
       >
         {children}
       </body>
