@@ -18,6 +18,12 @@ const config: Config = {
         muted: "#71717a",
         borderGlass: "rgba(0, 0, 0, 0.05)",
         surfaceGlass: "rgba(255, 255, 255, 0.6)",
+        hotel: {
+          dark: "#2A5A68",
+          light: "#EAF7F8",
+          accent: "#27B6C8",
+          text: "#1E3A42",
+        }
       },
       fontFamily: {
         sans: ["var(--font-josefin)", "system-ui", "sans-serif"],
