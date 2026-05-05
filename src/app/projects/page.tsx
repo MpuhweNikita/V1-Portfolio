@@ -36,14 +36,13 @@ export default function ProjectsPage() {
       <main className="mx-auto max-w-7xl px-4 pt-32 pb-20 sm:px-6 lg:px-8">
         <div className="mb-12 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <button
-              type="button"
-              onClick={() => router.back()}
+            <Link
+              href="/#projects"
               className="mb-8 inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-bold text-[#0F172A] transition-all hover:bg-gray-50 shadow-sm hover:shadow-md"
             >
               <ArrowLeft className="h-4 w-4" />
               Return Back
-            </button>
+            </Link>
             <h1 className="font-display text-4xl font-bold tracking-tight text-[#0F172A] sm:text-6xl">
               All Projects
             </h1>

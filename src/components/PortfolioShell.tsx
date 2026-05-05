@@ -45,12 +45,22 @@ function LoadingScreen() {
 
 export function PortfolioShell() {
   const activeSection = useActiveSection();
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(() => {
+    if (typeof window !== "undefined") {
+      return !sessionStorage.getItem("hasSeenLoadingScreen");
+    }
+    return true;
+  });
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2900);
-    return () => clearTimeout(timer);
-  }, []);
+    if (isLoading) {
+      const timer = setTimeout(() => {
+        setIsLoading(false);
+        sessionStorage.setItem("hasSeenLoadingScreen", "true");
+      }, 2900);
+      return () => clearTimeout(timer);
+    }
+  }, [isLoading]);
 
   return (
     <>
