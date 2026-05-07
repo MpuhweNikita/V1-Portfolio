@@ -90,7 +90,7 @@ export const projects: Project[] = [
     category: "frontend",
     image: "/project_feature.png",
     tech: ["React.js", "Typescript", "TailwindCSS", "Chart.js"],
-    liveUrl: "Not yet deployed",
+    liveUrl: "https://feedguardfront-end.onrender.com/",
     challenges: "Visualizing massive datasets in an accessible and performant way for decision makers.",
     results: "Created intuitive, fast-loading dashboard interfaces that drastically cut down report generation time.",
   },
