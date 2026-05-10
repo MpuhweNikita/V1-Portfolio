@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Josefin_Sans } from "next/font/google";
+import PWAProvider from "@/components/PWAProvider";
 import "./globals.css";
 
 const josefin = Josefin_Sans({
@@ -23,6 +24,15 @@ export const metadata: Metadata = {
     "Software Engineer specializing in Frontend and Mobile Development. Building interfaces people actually enjoy using.",
   keywords: ["Mpuhwe", "Software Engineer", "Frontend", "Mobile", "Developer"],
   authors: [{ name: "Mpuhwe" }],
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Mpuhwe",
+  },
+  other: {
+    "mobile-web-app-capable": "yes",
+  },
 };
 
 export default function RootLayout({
@@ -35,7 +45,7 @@ export default function RootLayout({
       <body
         className={`${josefin.variable} min-h-screen font-josefin bg-background selection:bg-hotel-accent/20 selection:text-hotel-dark`}
       >
-        {children}
+        <PWAProvider>{children}</PWAProvider>
       </body>
     </html>
   );
