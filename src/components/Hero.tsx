@@ -5,7 +5,7 @@ import { ArrowRight, MessageCircle, Sparkles } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const TYPING_TEXT = "Software Engineer | Frontend & Mobile Development";
+const TYPING_TEXT = "Software developer | Frontend & Mobile Development";
 
 const container = {
   hidden: { opacity: 0 },
@@ -21,7 +21,7 @@ const item = {
     opacity: 1,
     y: [35, -15, 0],
     scale: [0.95, 1.05, 1],
-    transition: { 
+    transition: {
       opacity: { duration: 0.4 },
       y: { duration: 0.8, times: [0, 0.6, 1], ease: "easeOut" },
       scale: { duration: 0.8, times: [0, 0.6, 1], ease: "easeOut" }
@@ -173,12 +173,12 @@ export function Hero({ isLoading = false }: { isLoading?: boolean }) {
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={isLoading ? { opacity: 0, scale: 0 } : { opacity: 1, scale: 1 }}
-          transition={{ 
-            type: "spring", 
-            stiffness: 80, 
-            damping: 20, 
+          transition={{
+            type: "spring",
+            stiffness: 80,
+            damping: 20,
             delay: 0.4,
-            duration: 1.5 
+            duration: 1.5
           }}
           className="relative z-10 mx-auto flex max-w-md justify-center lg:mx-0 lg:max-w-none lg:justify-end"
         >
@@ -249,7 +249,7 @@ export function Hero({ isLoading = false }: { isLoading?: boolean }) {
       {/* Wavy bottom divider */}
       <div className="wavy-divider-bottom text-white z-20 pointer-events-none">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill-white"></path>
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill-white"></path>
         </svg>
       </div>
     </section>

@@ -8,7 +8,7 @@ const items = [
     title: "Software Programming & Embedded Systems",
     org: "Rwanda Coding Academy",
     year: "2024 — Present",
-    detail: "Intensive program focusing on advanced software engineering, embedded systems, and product development.",
+    detail: "Intensive program focusing on advanced Software developering, embedded systems, and product development.",
     icon: GraduationCap,
   },
   {
