@@ -17,12 +17,12 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Mpuhwe | Software Engineer",
+    default: "Mpuhwe | Software developer",
     template: "%s | Mpuhwe",
   },
   description:
-    "Software Engineer specializing in Frontend and Mobile Development. Building interfaces people actually enjoy using.",
-  keywords: ["Mpuhwe", "Software Engineer", "Frontend", "Mobile", "Developer"],
+    "Software developer specializing in Frontend and Mobile Development. Building interfaces people actually enjoy using.",
+  keywords: ["Mpuhwe", "Software developer", "Frontend", "Mobile", "Developer"],
   authors: [{ name: "Mpuhwe" }],
   manifest: "/manifest.json",
   appleWebApp: {

@@ -40,7 +40,7 @@ export default function ResumePage() {
                     <section className="mb-6">
                         <h2 className="text-lg font-bold uppercase border-b-2 border-black mb-3 pb-1 tracking-wider text-neutral-800">Professional Summary</h2>
                         <p className="text-sm leading-relaxed text-justify">
-                            Highly adaptable and impact-driven Software Engineer with proven expertise across web development, mobile applications, and embedded systems. Demonstrated experience in leading product vision as a CEO, architecting frontend interfaces, and integrating complex hardware sensors. Adept at turning rough concepts into reliable, production-ready, and user-centric systems that address real-world challenges in agriculture, tech-education, and industrial logistics.
+                            Highly adaptable and impact-driven Software developer with proven expertise across web development, mobile applications, and embedded systems. Demonstrated experience in leading product vision as a CEO, architecting frontend interfaces, and integrating complex hardware sensors. Adept at turning rough concepts into reliable, production-ready, and user-centric systems that address real-world challenges in agriculture, tech-education, and industrial logistics.
                         </p>
                     </section>
 
